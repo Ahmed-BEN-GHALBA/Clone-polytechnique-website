@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../pictures/logo.png" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            height: 80px;
+        }
+        
+        nav img {
+            width: 100px;
+            margin-top: 10px;
+        }
+        
+        body {
+            margin: 0 30px;
+            width: 95vw;
+            height: 95vh;
+            background-color: black;
+        }
+        
+        .formulaire {
+            background-color: white;
+            padding: 15px;
+        }
+        
+        body::-webkit-scrollbar {
+            /* chrome and safari*/
+            display: none;
+        }
+        
+        body {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
+    <title>PolyTechnique / inscription</title>
+</head>
+
+<body>
+    <nav>
+        <a href="../index.html">
+            <img src="../pictures/polyLogo.png" />
+        </a>
+        <div style="display: flex;">
+            <div class="nav-link mt-2">
+                <a href="../Frais d'inscription/frais d'inscription.html" class="btn text-light btn-block" style="background-color: #e50914;">Frais D'inscription</a>
+            </div>
+            <div class="nav-link mt-2">
+                <a href="../presentation/presentation.html" class="btn text-light btn-block" style="background-color: #e50914;">Plus d'informations</a>
+            </div>
+            <a href="../index.html" style="text-decoration: none;">
+                <img src="../pictures/home.png" style="width: 50px;" />
+            </a>
+        </div>
+    </nav>
+
+    
+    <section>
+        <div class="formulaire rounded">
+            <h2 class="text-center text-white bg-secondary p-2">Demande de renseignement</h2>
+            <form>
+                <div class="mb-3 mt-3 valid-tooltip">
+                    <label class="form-label">Nom et Prénom :</label>
+                    <input type="text" class="form-control" placeholder="Taper votre nom complet"/>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label class="form-label">Adresse e-mail :</label>
+                    <input type="email" class="form-control" placeholder="Taper votre E-mail" />
+                </div>
+                <div class="mb-3 mt-3">
+                    <label class="form-label">Numéro de téléphone mobile :</label>
+                    <input type="number" class="form-control" placeholder="Taper votre N° Télephone" />
+                </div>
+                <label class="form-label">Chosisez votre filiére :</label>
+                <select class="form-select">
+                    <option></option>
+                    <option>Cycle Préparatoire</option>
+                    <option>Cycle Ingénieur</option>
+                    <option>Cycle Licence</option>
+                </select>
+                <label class="form-label">Comment avez-vous connu Polytechnique Sousse?
+                </label>
+                <div class="border border-2">
+                    <div class="form-check m-1">
+                        <input class="form-check-input" type="checkbox" name="option1" unchecked />
+                        <label class="form-check-label">Journaux / Magazines</label>
+                    </div>
+                    <div class="form-check m-1">
+                        <input class="form-check-input" type="checkbox" name="option1" unchecked />
+                        <label class="form-check-label">Bouche à Oreille (Famille/Ami...)</label>
+                    </div>
+                    <div class="form-check m-1">
+                        <input class="form-check-input" type="checkbox" name="option1" unchecked />
+                        <label class="form-check-label">Moteur de recherche ( Google, Yahoo...)</label>
+                    </div>
+                    <div class="form-check m-1">
+                        <input class="form-check-input" type="checkbox" name="option1" unchecked />
+                        <label class="form-check-label">Réseaux socieaux</label>
+                    </div>
+                </div>
+
+                <div class="d-grid mt-3">
+                    <button type="submit" class="btn btn-danger btn-block">
+                        Envoyer
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="mt-4 p-5 bg-light text-black rounded">
+            <h2>Documents requis :</h2>
+            <ol type="1" start="1">
+                <li>Imprimé de préinscription en ligne ou à retirer de l’école et à remplir avec soin</li>
+                <li> Copie conforme à l’original du diplôme de baccalauréat</li>
+                <li>Copie conforme à l’original du relevé des notes du baccalauréat</li>
+                <li>Copie conforme à l’original de tous les relevés de notes et attestations de réussite des années d’études universitaires après le baccalauréat (pour ceux qui en ont fait)</li>
+                <li>2 photos d’identité récentes</li>
+                <li>Un extrait de naissance en français</li>
+                <li>2 enveloppes timbrées (libellées à l’adresse personnelle de l’étudiant)</li>
+                <li>Photocopie de la carte d’identité nationale</li>
+                <li>Photocopie des deux premières pages du passeport (Pour les étudiants internationaux)</li>
+                <li>Un certificat médical attestant que l’étudiant est dans un état de santé satisfaisant lui permettant de vivre en communauté.</li>
+            </ol>
+
+            <a class="btn btn-danger disabled" target="-_blanc" href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=https%3A%2F%2Fwww.polytecsousse.tn%2Fwp-content%2Fuploads%2F2021%2F03%2Finscrip_prepa.pdf&clen=393923&chunk=true">
+                Demande D'inscription Prépa 
+            </a>
+            <a class="btn btn-danger btn-block disabled" target="_blanc" href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=https%3A%2F%2Fwww.polytecsousse.tn%2Fwp-content%2Fuploads%2F2021%2F03%2Finscrip_ingenieur.pdf&clen=325496&chunk=true">
+                Demande D'inscription Ingénierie
+            </a>
+            <a class="btn btn-danger btn-block disabled" target="_blanc" href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=https%3A%2F%2Fwww.polytecsousse.tn%2Fwp-content%2Fuploads%2F2021%2F05%2FLicence.pdf&clen=297244&chunk=true">
+                Demande D'inscription Licence
+            </a>
+
+        </div>
+    </section>
+
+
+    <footer class="footer" style="
+        max-width: 95vw;
+        margin: 1rem auto;
+        overflow: auto;
+        display: flex;
+        justify-content: space-between;">
+        <p class="text-light">
+            © 2021 Polytechnique Sousse. All rights reserved. BEN GHALBA Ahmed Amine
+        </p>
+        <div>
+            <a href="#">
+                <img src="../pictures/up2.png" />
+            </a>
+        </div>
+    </footer>
+    <script src="bootstrap.js"></script>
+</body>
+
+</html>

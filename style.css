@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background: #000;
+    color: #999;
+}
+
+a {
+    text-decoration: none;
+}
+
+.showcase {
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url('pictures/bg.jpg') no-repeat center center/cover;
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.showcase-top {
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+.showcase-top img {
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(20%, -50%);
+    margin-left: 0;
+    margin-top: 40px;
+}
+
+.showcase-top a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-10%, -50%);
+}
+
+.showcase-content {
+    position: relative;
+    z-index: 2;
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.showcase-content h1 {
+    font-weight: 700;
+    font-size: 5.3rem;
+    line-height: 1.1;
+    margin: 0 0 2rem;
+    color: #fff;
+}
+
+.showcase-content p {
+    color: #fff;
+    font-size: 1.9rem;
+    line-height: 1.25;
+    margin: 0 0 2rem;
+}
+
+
+/* Tabs */
+
+.tabs {
+    background: #141414;
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+    border-right: none;
+}
+
+.tabs .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tabs p {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.tabs .container>div {
+    padding: 1.5rem 0;
+}
+
+.tabs .container>div:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.tab-border {
+    border-bottom: #e50914 4px solid;
+}
+
+
+/* Tab Content */
+
+.tab-content {
+    padding: 3rem 0;
+    background: #000;
+    color: #fff;
+}
+
+.contact {
+    display: block;
+    margin: 0 40px 20px 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact img {
+    margin-right: 30px;
+    width: 32px;
+    height: 35px;
+}
+
+
+/* Hide initial content */
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+    opacity: 0;
+}
+
+.show {
+    display: block !important;
+    opacity: 1 !important;
+    transition: all 1000 ease-in;
+}
+
+#tab-1-content .tab-1-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.modal {
+    color: black;
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 10% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    font-size: 38px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#my-form {
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+#my-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.error {
+    background: orangered;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.tab-content-item p {
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.footer {
+    max-width: 95vw;
+    margin: 1rem auto;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.container {
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #e50914;
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: opacity 0.2s ease-in;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}

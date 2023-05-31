@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="pictures/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet" />
+  <title>PolyTechnique Sousse</title>
+</head>
+
+<body>
+  <header class="showcase">
+    <div class="showcase-top">
+      <img src="pictures/polyLogo.png" />
+      <a href="#" class="btn" id="openModal">Connectez-vous à votre compte</a>
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="my-form">
+          <div class="msg"></div>
+          <div>
+            <label>Votre Nom : </label>
+            <input type="text" class="InputArea" id="name" />
+          </div>
+          <div>
+            <label>Votre Matricule : </label>
+            <input type="text" class="InputArea" id="matricule" />
+          </div>
+          <div>
+            <input class="btn" type="submit" value="Connecter a votre compte" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="showcase-content">
+      <h1>Ecole PolyTechnique<em style="font-size: 30px"> sousse</em></h1>
+      <p>Ouverture des inscriptions<br />2021/2022</p>
+    </div>
+  </header>
+
+  <section class="tabs">
+    <div class="container">
+      <div id="tab-1" class="tab-item tab-border">
+        <p class="tab-name">Contact</p>
+      </div>
+      <div id="tab-2" class="tab-item">
+        <p class="tab-name">Galerie photos</p>
+      </div>
+      <div id="tab-3" class="tab-item">
+        <p class="tab-name">Présentation</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tab-content">
+    <div class="container">
+      <!-- Tab Content 1 -->
+      <div id="tab-1-content" class="tab-content-item show">
+        <div class="tab-1-content-inner">
+          <div class="contacts">
+            <p>
+              vous pouvez nous contacter via ces contacts et plateformes :
+            </p>
+            <a href="#" class="contact"><img src="pictures//loc.jpg" />route ceinture Sahloul entrée kalaa sghira
+              4021</a>
+            <a href="#" class="contact"><img src="pictures//phone.jpg" />(+216) 73 277 877</a>
+            <a href="#" class="contact"><img src="pictures//email.jpg" />contact@polytecsousse.tn</a>
+            <a href="https://www.facebook.com/EcolePolytechniqueSousse/" target="_blanc" class="contact"><img
+                src="pictures//facebook.png" />Facebook/Ecole Polytechnique Sousse</a>
+            <a href="https://www.instagram.com/polytecsousse_eps/?hl=fr" target="_blanc" class="contact"><img
+                src="pictures/instagram.png" />Instagram/Ecole Polytechnique Sousse</a>
+            <a href="https://www.youtube.com/channel/UCBylCnL91kn1OFu_0DsjIJw" target="_blanc" class="contact"><img
+                src="pictures/youtube.png" />YouTube/Ecole Polytechnique Sousse
+            </a>
+          </div>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="450" height="450" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=polytechnique%20sousse&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              <a href="https://123movies-to.org"></a><br />
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 450px;
+                  width: 450px;
+                }
+              </style>
+              <a href="https://www.embedgooglemap.net">using google maps on your website</a>
+              <style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 450px;
+                  width: 450px;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 2 -->
+      <div id="tab-2-content" class="tab-content-item">
+        <h3>Notre Campus :</h3>
+        <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="pictures/slide0.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/slide1.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/slide2.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/slide3.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/slide4.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/slide5.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/slide6.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/slide7.png" class="d-block w-100">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <h6></h6>
+      </div>
+
+      <!-- Tab Content 3 -->
+      <div id="tab-3-content" class="tab-content-item">
+        <div>
+          <p>
+            Fondée en 2009,
+            <b><em style="letter-spacing: 2px; margin: 6px">
+                L’Ecole Polytechnique de Sousse
+              </em></b>
+            est une grande école privée d’enseignement et de recherche à
+            vocation internationale, accréditée EUR- ACE et qui a pour unique
+            vocation de former des ingénieurs ayant un niveau technique et
+            scientifique conforme aux meilleurs standards internationaux. Elle
+            se fixe résolument comme mission de garantir une excellente
+            insertion professionnelle à ses jeunes diplômés en les propulsant
+            directement à l’employabilité.
+          </p>
+          <a href="inscription/inscription.html" class="btn">S'inscrire</a>
+          <a href="Frais d'inscription/frais d'inscription.html" class="btn">Frais D'inscription</a>
+          <a href="presentation/presentation.html" class="btn btn-danger btn-block">Plus d'informations</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>
+      © 2021 Polytechnique Sousse. All rights reserved. BEN GHALBA Ahmed Amine
+    </p>
+    <a href="#">
+      <img src="pictures/up2.png" />
+    </a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="poly.js"></script>
+  <!-- <script src="bootstrap.js"></script> -->
+</body>
+
+</html>
